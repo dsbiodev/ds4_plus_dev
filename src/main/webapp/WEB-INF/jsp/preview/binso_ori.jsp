@@ -204,7 +204,7 @@
 					
 					// 추모의 글 영역 세팅 //
 					// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
-					const apiURL = 'http://15.165.89.190/api/v1/event/obituary-comment';
+					const apiURL = 'https://15.165.89.190/api/v1/event/obituary-comment';
 					$.pb.ajaxCallHandler(apiURL, { eventNo : evtInfo.EVENT_NO }, function(data) {
 						try{
 							var choomoWrap = $( '.choomo-wrap' );

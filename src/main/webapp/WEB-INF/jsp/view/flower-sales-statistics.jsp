@@ -160,7 +160,7 @@ var getOS="";
 		//api
 		$.ajax({
 			//url : 'https://choomo.app/api/ds/savings', //운영
-			url : 'http://15.165.89.190/api/v1/savings',
+			url : 'https://15.165.89.190/api/v1/savings',
 			//url : 'http://211.251.238.235:9090/api/ds/savings', //개발
 			
 			type : 'get',
