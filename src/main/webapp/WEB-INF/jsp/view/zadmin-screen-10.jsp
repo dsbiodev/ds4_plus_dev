@@ -187,7 +187,9 @@
 							
 							
 							// 추모의 글 영역 세팅 //
-							$.pb.ajaxCallHandler('https://choomo.app/api/v1/event/obituary-comment', { eventNo : _info.EVENT_NO }, function(data) {
+							// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
+							const apiURL = 'http://15.165.89.190/api/v1/event/obituary-comment';
+							$.pb.ajaxCallHandler(apiURL, { eventNo : _info.EVENT_NO }, function(data) {
 								$.each(data, function(){
 									_div.find('.condolence').addClass('slide_'+idx);
 									var _comment = $('<div class="swiper-slide"><img src="/resources/img/icon_obi_0'+this.USER_FLAG+'.png"><div class="comment">'+"'"+this.COMMENT_NO+"' "+this.NAME+'</div></div>');
@@ -254,7 +256,9 @@
 							// 추모의 글 영역 세팅 //
 							
 							if(_info) {
-								$.pb.ajaxCallHandler('https://choomo.app/api/v1/event/obituary-comment', { eventNo : _info.EVENT_NO }, function(data) {
+								// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
+								const apiURL = 'http://15.165.89.190/api/v1/event/obituary-comment';
+								$.pb.ajaxCallHandler(apiURL, { eventNo : _info.EVENT_NO }, function(data) {
 									$.each(data, function(){
 										_div.find('.condolence').addClass('slide_'+idx);
 										var _comment = $('<div class="swiper-slide"><img src="/resources/img/icon_obi_0'+this.USER_FLAG+'.png"><div class="comment">'+"'"+this.COMMENT_NO+"' "+this.NAME+'</div></div>');

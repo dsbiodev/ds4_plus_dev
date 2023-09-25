@@ -719,7 +719,8 @@
 									}
 																		
 									$.ajax({
-										url : 'https://choomo.app/api/v1/event',
+										//url : 'https://choomo.app/api/v1/event',
+										url : 'http://15.165.89.190/api/v1/event',
 										type : 'post',
 										async: false,
 										data : {'eventNo' : result.eventNo },
@@ -739,7 +740,8 @@
 		});
 		$('.event-info-top > .right-wrap').find('.btn.bugo-pop').on('click', function() {
 			$('.pb-right-popup-wrap').openLayerPopup({}, function(_thisLayer) {
-				document.choomoService.location = 'https://choomo.app/choomo-service?eventNo=' + _param.pk;
+				// document.choomoService.location = 'https://choomo.app/choomo-service?eventNo=' + _param.pk;
+				document.jrbaksaService.location = 'http://15.165.89.190/service?eventNo=' + _param.pk;
 			});
 		});
 		
@@ -874,7 +876,7 @@
 		<div class="pb-popup-title">모바일 부고장 보내기</div>
 		<span class="pb-popup-close"></span>
 		<div class="pb-popup-body" id="bugo-pop-body" >
-			<iframe name="choomoService" width="100%" height="100%" scrolling="no" frameborder="0">해당 브라우저는 IFRAME을 지원하지 않습니다.<br/>다른 브라우저를 이용해주세요.</iframe>
+			<iframe name="jrbaksaService" width="100%" height="100%" scrolling="no" frameborder="0">해당 브라우저는 IFRAME을 지원하지 않습니다.<br/>다른 브라우저를 이용해주세요.</iframe>
 		</div>
 	</div>
 </form>

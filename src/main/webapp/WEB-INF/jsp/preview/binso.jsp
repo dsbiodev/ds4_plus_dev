@@ -287,9 +287,13 @@
 				* 양산부산대학교병원 : 298
 				* 동래봉생병원장례식장 : 599
 				*/
+				
+					// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
+					const apiURL = 'http://15.165.89.190/api/v1/event/obituary-comment';
+					
 					if(_funeralNo == 1366 || _funeralNo == 597 || _funeralNo == 309 || _funeralNo == 300 || _funeralNo == 298 || _funeralNo == 599){//HYH - 추모의 글 영역 가로로 텍스트 전부 나오게 운영 -1366
 					//if(_funeralNo == 1366 || _funeralNo == 597 || _funeralNo == 309 || _funeralNo == 300){//HYH - 추모의 글 영역 가로로 텍스트 전부 나오게 운영 -1366	
-						$.pb.ajaxCallHandler('https://choomo.app/api/v1/event/obituary-comment', { eventNo : evtInfo.EVENT_NO }, function(data) {
+						$.pb.ajaxCallHandler(apiURL, { eventNo : evtInfo.EVENT_NO }, function(data) {
 							
 							var choomoWrap = $( '.choomo-wrap' );
 							var listL="<div class='swiper-slide-per'>";
@@ -305,7 +309,7 @@
 							
 						});					
 					}else{
-						$.pb.ajaxCallHandler('https://choomo.app/api/v1/event/obituary-comment', { eventNo : evtInfo.EVENT_NO }, function(data) {
+						$.pb.ajaxCallHandler(apiURL, { eventNo : evtInfo.EVENT_NO }, function(data) {
 							try{
 								var choomoWrap = $( '.choomo-wrap' );
 								
