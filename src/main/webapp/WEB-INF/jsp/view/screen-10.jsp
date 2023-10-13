@@ -217,7 +217,7 @@
 							
 							// 추모의 글 영역 세팅 //
 							// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
-							const apiURL = 'https://15.165.89.190/api/v1/event/obituary-comment';
+							const apiURL = 'https://cnemoment.com/api/v1/event/obituary-comment';
 							$.pb.ajaxCallHandler(apiURL, { eventNo : _info.EVENT_NO }, function(data) {
 								$.each(data, function(){
 									_div.find('.condolence').addClass('slide_'+idx);
@@ -318,7 +318,7 @@
 							// 추모의 글 영역 세팅 //
 							if(_info) {
 								// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
-								const apiURL = 'https://15.165.89.190/api/v1/event/obituary-comment';
+								const apiURL = 'https://cnemoment.com/api/v1/event/obituary-comment';
 								$.pb.ajaxCallHandler(apiURL, { eventNo : _info.EVENT_NO }, function(data) {
 									$.each(data, function(){
 										_div.find('.condolence').addClass('slide_'+idx);
