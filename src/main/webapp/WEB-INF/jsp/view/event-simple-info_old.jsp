@@ -569,7 +569,7 @@
 									$.ajax({
 										//url : 'http://211.251.238.235:9090/api/v1/event',
 										//url : 'https://choomo.app/api/v1/event',
-										url : 'https://cnemoment.com/api/v1/event',
+										url : 'https://dsbio.jrbaksa.com/api/v1/event',
 										type : 'post',
 										async: false,
 										data : {'eventNo' : result.eventNo },
@@ -596,7 +596,7 @@
 			$('.pb-right-popup-wrap').openLayerPopup({}, function(_thisLayer) {
 				//document.choomoService.location = 'http://211.251.238.235:9090/choomo-service?eventNo=' + _param.pk;
 				// document.choomoService.location = 'https://choomo.app/choomo-service?eventNo=' + _param.pk;
-				document.jrbaksaService.location = 'https://cnemoment.com/service?eventNo=' + _param.pk;
+				document.jrbaksaService.location = 'https://dsbio.jrbaksa.com/service?eventNo=' + _param.pk;
 			});
 		});
 

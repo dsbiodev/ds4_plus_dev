@@ -160,7 +160,7 @@ var getOS="";
 		//api
 		$.ajax({
 			//url : 'https://choomo.app/api/ds/savings', //운영
-			url : 'https://cnemoment.com/api/v1/savings',
+			url : 'https://dsbio.jrbaksa.com/api/v1/savings',
 			//url : 'http://211.251.238.235:9090/api/ds/savings', //개발
 			
 			type : 'get',

@@ -519,7 +519,7 @@
 								if(result != 0) {
 									$.ajax({
 										//url : 'https://choomo.app/api/v1/event',
-										url : 'https://cnemoment.com/api/v1/event',
+										url : 'https://dsbio.jrbaksa.com/api/v1/event',
 										type : 'post',
 										async: false,
 										data : {'eventNo' : result.EVENT_NO },
@@ -541,7 +541,7 @@
 		$('.event-info-top > .right-wrap').find('.btn.bugo-pop').on('click', function() {
 			$('.pb-right-popup-wrap').openLayerPopup({}, function(_thisLayer) {
 				// document.choomoService.location = 'https://choomo.app/choomo-service?eventNo=' + _param.pk;
-				document.jrbaksaService.location = 'https://cnemoment.com/service?eventNo=' + _param.pk;
+				document.jrbaksaService.location = 'https://dsbio.jrbaksa.com/service?eventNo=' + _param.pk;
 // 				_thisLayer.find('.top-button.register').val('');
 // 				obituary();
 			});

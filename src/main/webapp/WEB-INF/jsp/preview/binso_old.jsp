@@ -135,7 +135,7 @@
 					
 					// 추모의 글 영역 세팅 //
 					// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
-					const apiURL = 'https://cnemoment.com/api/v1/event/obituary-comment';
+					const apiURL = 'https://dsbio.jrbaksa.com/api/v1/event/obituary-comment';
 					
 					$.pb.ajaxCallHandler(apiURL, { eventNo : evtInfo.EVENT_NO }, function(data) {
 						try{

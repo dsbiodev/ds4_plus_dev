@@ -483,7 +483,7 @@ public class AdminServiceImpl implements AdminService {
 				
 				"遺�怨좎옣 �솗�씤 :\r"+
 //				"https://choomo.app/999901?eventNo="+requestMap.get("eventNo").toString()+"\r\r"+
-				"https://cnemoment.com/obituary?eventNo="+requestMap.get("eventNo").toString()+"\r\r"+
+				"https://dsbio.jrbaksa.com/obituary?eventNo="+requestMap.get("eventNo").toString()+"\r\r"+
 				
 				"[紐⑤컮�씪 遺�怨좎옣 蹂대궡�뒗諛⑸쾿]\r"+
 				"'遺�怨좎옣 �솗�씤' �겢由� �썑\r"+

@@ -289,7 +289,7 @@
 				*/
 				
 					// const apiURL = 'https://choomo.app/api/v1/event/obituary-comment';
-					const apiURL = 'https://cnemoment.com/api/v1/event/obituary-comment';
+					const apiURL = 'https://dsbio.jrbaksa.com/api/v1/event/obituary-comment';
 					
 					if(_funeralNo == 1366 || _funeralNo == 597 || _funeralNo == 309 || _funeralNo == 300 || _funeralNo == 298 || _funeralNo == 599){//HYH - 추모의 글 영역 가로로 텍스트 전부 나오게 운영 -1366
 					//if(_funeralNo == 1366 || _funeralNo == 597 || _funeralNo == 309 || _funeralNo == 300){//HYH - 추모의 글 영역 가로로 텍스트 전부 나오게 운영 -1366	
